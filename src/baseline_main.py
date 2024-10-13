@@ -89,7 +89,7 @@ if __name__ == '__main__':
     plt.plot(range(len(epoch_loss)), epoch_loss)
     plt.xlabel('epochs')
     plt.ylabel('Train loss')
-    plt.savefig('/content/drive/MyDrive/FedLearning/fl-energy/save/baseline_{}_{}_{}_loss.png'.format(args.dataset, args.model,
+    plt.savefig('../save/baseline_{}_{}_{}_loss.png'.format(args.dataset, args.model,
                                                  args.epochs))
 
     # testing
