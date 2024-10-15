@@ -136,7 +136,13 @@ if __name__ == '__main__':
     with open(file_name, 'wb') as f:
         pickle.dump({"train_loss": train_loss,
                      "train_accuracy": train_accuracy,
-                     "total_time": total_time}, f)
+                     "total_time": total_time,
+                     "test_accuracy": test_acc,
+                     "C": args.frac,
+                     "epochs": args.epochs,
+                     "B": args.local_bs,
+                     "iid": args.iid,
+                     "E": args.local_ep}, f)
 
     print('\n Total Run Time: {0:0.4f}'.format(total_time))
 
